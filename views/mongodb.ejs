@@ -1,0 +1,13 @@
+<h2> MongoDB Query results </h2>
+
+<ul class="results">
+  <!-- Loop through results -->
+  <% for(var i = 0; i < results.length; i++) {%>
+    <li class="result">
+      <!-- Output name from the iterated result object -->
+      
+      ID - <%= results[i]._id %> --- Name - <%= results[i].Name %>
+
+    </li>
+  <% } %>
+</ul>
